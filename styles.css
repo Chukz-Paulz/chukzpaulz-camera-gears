@@ -10,7 +10,6 @@ body {
 nav {
     background-color: #003366;
     padding: 10px;
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,10 +41,61 @@ nav {
     text-decoration: underline;
 }
 
+/* Intro Section */
+.intro-section {
+    background-image: url('https://www.weseektravel.com/wp-content/uploads/2022/02/camera-gear-for-travel-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Creates the fade effect */
+}
+
+.intro-text {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.intro-text h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.deploy-btn {
+    padding: 10px 20px;
+    background-color: #00bfa5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.deploy-btn:hover {
+    background-color: #009688;
+}
+
 /* Content Container */
 .content-container {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 .content {
@@ -55,13 +105,13 @@ nav {
     background-color: #e0f7fa;
     border-radius: 10px;
     width: 300px;
-    height: 450px; /* Adjust height to fit images and text */
+    height: 450px;
     vertical-align: top;
 }
 
 .content img {
     width: 100%;
-    height: 200px; /* Ensure the images fit nicely */
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
